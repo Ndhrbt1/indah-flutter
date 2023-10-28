@@ -1,6 +1,8 @@
 part of '_index.dart';
 
 abstract class Serv {
+  static ProductServ get product => ProductServ();
+
   // static ConnServ get conn => ConnServ();
   // static AuthServ get auth => AuthServ();
   // static DummyServ get dummy => DummyServ();
