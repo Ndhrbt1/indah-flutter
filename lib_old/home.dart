@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
 class MyHomePage extends StatefulWidget {
@@ -28,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: () {
               html.window.open('https://github.com/Ndhrbt1/indah-flutter', 'new tab');
             },
-            child: Text('github'),
+            child: const Text('github'),
           )
         ],
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
