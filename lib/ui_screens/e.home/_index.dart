@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:indah_flutter/ui_screens/f.beranda/_index.dart';
+import 'package:indah_flutter/ui_screens/beranda/_index.dart';
 import 'package:states_rebuilder/states_rebuilder.dart';
 
 import '../../app/_index.dart';
@@ -16,6 +16,7 @@ part 'widgets/c.home.charlie.dart';
 part 'widgets/d.home.delta.dart';
 part 'widgets/e.home.echo.dart';
 
+// ignore: unused_element
 HomeCtrl get _ct => Ctrl.home;
 
 HomeData get _dt => Data.home.st;

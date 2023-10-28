@@ -5,4 +5,7 @@ abstract class Ctrl {
   static SplashCtrl get splash => SplashCtrl();
   static BerandaCtrl get beranda => BerandaCtrl();
   static HomeCtrl get home => HomeCtrl();
+  static FoodCtrl get food => FoodCtrl();
+  static LifeCtrl get life => LifeCtrl();
+  static TechCtrl get tech => TechCtrl();
 }

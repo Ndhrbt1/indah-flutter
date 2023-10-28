@@ -38,13 +38,13 @@ class _BerandaViewState extends State<BerandaView> {
             const SliverToBoxAdapter(
               child: SizedBox(
                 height: 1000,
-                // child: TabBarView(
-                //   // children: <Widget>[
-                //   //   LaptopView(),
-                //   //   HpView(),
-                //   //   AksesorisView(),
-                //   // ],
-                // ),
+                child: TabBarView(
+                  children: <Widget>[
+                    FoodView(),
+                    TechView(),
+                    LifeView(),
+                  ],
+                ),
               ),
             )
           ],
