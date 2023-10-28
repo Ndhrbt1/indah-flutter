@@ -1,10 +1,10 @@
 part of '../_index.dart';
 
-class CobaDuaCharlie extends StatelessWidget {
-  const CobaDuaCharlie({Key? key}) : super(key: key);
+class BerandaCharlie extends StatelessWidget {
+  const BerandaCharlie({Key? key}) : super(key: key);
 
-  CobaDuaCtrl get ct => Ctrl.cobaDua;
-  CobaDuaData get dt => Data.cobaDua.st;
+  BerandaCtrl get ct => Ctrl.beranda;
+  BerandaData get dt => Data.beranda.st;
 
   @override
   Widget build(BuildContext context) {
