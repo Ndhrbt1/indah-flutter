@@ -6,4 +6,8 @@ class FoodCtrl {
   init() => logxx.i(FoodCtrl, '...');
 
   action() => dt.rxInt.setState((s) => s + 1);
+
+  readAllProducts() {
+    _sv.readAllProducts();
+  }
 }

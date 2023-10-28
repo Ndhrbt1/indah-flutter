@@ -19,6 +19,6 @@ part 'widgets/d.product_list.delta.dart';
 part 'widgets/e.product_list.echo.dart';
 
 ProductListData get _dt => Data.productList.st;
-ProductProv get _pv => Prov.product.st;
 ProductListCtrl get _ct => Ctrl.productList;
+ProductProv get _pv => Prov.product.st;
 ProductServ get _sv => Serv.product;

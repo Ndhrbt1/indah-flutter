@@ -8,21 +8,55 @@ class FoodView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(56),
-        child: FoodAppbar(),
-      ),
-      floatingActionButton: FoodFab(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            FoodCharlie(),
-            FoodDelta(),
-            FoodEcho(),
-          ],
-        ),
+    return Scaffold(
+      body: OnBuilder.all(
+        listenToMany: [_dt.rxProductList, _dt.rxLoadMore],
+        onWaiting: () => const Center(child: CircularProgressIndicator()),
+        onError: (error, refreshError) => Text(error),
+        onData: (data) => _dt.rxProductList.st.isEmpty
+            ? const Center(child: Text('Data is empty'))
+            : ListView(
+                children: [
+                  ...List.generate(
+                    _dt.rxProductList.st.length,
+                    (index) => OnReactive(
+                      () => Wrap(
+                        children: [
+                          Card(
+                            child: Container(
+                              color: Colors.black45,
+                              width: 180,
+                              height: 220,
+                              child: Column(
+                                children: [
+                                  Container(
+                                    margin: const EdgeInsets.only(top: 10, bottom: 10),
+                                    height: 160,
+                                    width: 160,
+                                    child: Image.network(_dt.rxProductList.st[index].image),
+                                  ),
+                                  Text(_dt.rxProductList.st[index].name),
+                                  Text('Rp ${Fun.formatRupiah.format(_dt.rxProductList.st[index].price)}'),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  _dt.rxIsEnd.st == true
+                      ? const Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Center(child: Text('end of list')),
+                        )
+                      : TextButton.icon(
+                          label: const Text('load  more'),
+                          onPressed: () => _ct.readAllProducts(),
+                          icon: const Icon(Icons.repeat),
+                        ),
+                ],
+              ),
       ),
     );
   }

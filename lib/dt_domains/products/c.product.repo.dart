@@ -4,7 +4,6 @@ class ProductRepo {
 // * repo read list
   Future<List<Product>> readAllProducts() async {
     List<Product> products = [];
-    logx.w('wkwkwk');
 
     final QuerySnapshot<Map<String, dynamic>> result = await x1FbFirestore.readCollection(
       colId: 'product',
