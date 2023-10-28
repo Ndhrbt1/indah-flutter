@@ -7,6 +7,7 @@ class RouteMap {
     // Routes.root: (RouteData data) => const HomeView(),
     //* master -- ----- ----- ----- ----- -----
     Routes.productList: (RouteData data) => const ProductListView(),
+    Routes.splash: (RouteData data) => const SplashView(),
 
     Routes.cobaSatu: (RouteData data) => const CobaSatuView(),
     Routes.cobaDua: (RouteData data) => const CobaDuaView(),
