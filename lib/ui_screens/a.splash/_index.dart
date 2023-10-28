@@ -15,5 +15,5 @@ part 'widgets/c.splash.charlie.dart';
 part 'widgets/d.splash.delta.dart';
 part 'widgets/e.splash.echo.dart';
 
-SplashCtrl get _ct => Ctrl.splash;
+// SplashCtrl get _ct => Ctrl.splash;
 SplashData get _dt => Data.splash.st;

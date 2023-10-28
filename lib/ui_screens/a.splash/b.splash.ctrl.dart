@@ -11,6 +11,6 @@ class SplashCtrl {
   delayedNavigation() async {
     await Future.delayed(3.seconds);
 
-    nav.toReplacement(Routes.beranda);
+    nav.toReplacement(Routes.home);
   }
 }

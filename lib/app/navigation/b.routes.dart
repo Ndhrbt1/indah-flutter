@@ -8,4 +8,5 @@ class Routes {
   static const productList = '/product_list';
   static const splash = '/splash';
   static const beranda = '/beranda';
+  static const home = '/home';
 }
