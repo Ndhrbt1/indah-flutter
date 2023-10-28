@@ -1,8 +1,6 @@
 part of '_index.dart';
 
 class ProductRepo {
-  get x1FbFirestore => null;
-
 // * repo read list
   Future<List<Product>> readAllProducts() async {
     List<Product> products = [];

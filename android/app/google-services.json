@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317782254077",
+    "project_id": "indah-flutter",
+    "storage_bucket": "indah-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317782254077:android:e3d1704cd3e1e1e189b994",
+        "android_client_info": {
+          "package_name": "com.example.indah_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcCfSIiiKU8Df37-GI9mfr1tCP2En7Pgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

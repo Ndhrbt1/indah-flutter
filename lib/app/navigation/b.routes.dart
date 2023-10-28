@@ -5,6 +5,8 @@ class Routes {
 
   // static const root = '/';
   //* master -- ----- ----- ----- ----- -----
+  static const productList = '/product_list';
+
   static const cobaSatu = '/';
   static const cobaDua = '/coba_dua';
   static const cobaTiga = '/coba_tiga';
