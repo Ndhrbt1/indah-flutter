@@ -9,4 +9,5 @@ class Routes {
   static const splash = '/splash';
   static const beranda = '/beranda';
   static const home = '/home';
+  static const productDetail = '/product_detail';
 }

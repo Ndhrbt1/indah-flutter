@@ -10,5 +10,6 @@ class RouteMap {
     Routes.splash: (RouteData data) => const SplashView(),
     Routes.beranda: (RouteData data) => const BerandaView(),
     Routes.home: (RouteData data) => const HomeView(),
+    Routes.productDetail: (RouteData data) => const ProductDetailView(),
   };
 }

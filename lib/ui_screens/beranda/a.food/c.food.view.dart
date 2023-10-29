@@ -15,33 +15,35 @@ class FoodView extends StatelessWidget {
         onError: (error, refreshError) => Text(error),
         onData: (data) => _dt.rxProductList.st.isEmpty
             ? const Center(child: Text('Data is empty'))
-            : ListView(
+            : Wrap(
                 children: [
                   ...List.generate(
                     _dt.rxProductList.st.length,
                     (index) => OnReactive(
-                      () => Wrap(
-                        children: [
-                          Card(
-                            child: Container(
-                              color: Colors.black45,
-                              width: 180,
-                              height: 220,
-                              child: Column(
-                                children: [
-                                  Container(
-                                    margin: const EdgeInsets.only(top: 10, bottom: 10),
-                                    height: 160,
-                                    width: 160,
-                                    child: Image.network(_dt.rxProductList.st[index].image),
-                                  ),
-                                  Text(_dt.rxProductList.st[index].name),
-                                  Text('Rp ${Fun.formatRupiah.format(_dt.rxProductList.st[index].price)}'),
-                                ],
-                              ),
+                      () => InkWell(
+                        onTap: () {
+                          _ct.selectProduct(_dt.rxProductList.st[index].id);
+                        },
+                        child: Card(
+                          child: Container(
+                            color: Colors.black45,
+                            width: 180,
+                            height: 220,
+                            child: Column(
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.only(top: 10, bottom: 10),
+                                  height: 160,
+                                  width: 160,
+                                  child: Image.network(_dt.rxProductList.st[index].image),
+                                ),
+                                // Text(_dt.rxProductList.st[index].id),
+                                Text(_dt.rxProductList.st[index].name),
+                                Text('Rp ${Fun.formatRupiah.format(_dt.rxProductList.st[index].price)}'),
+                              ],
                             ),
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),

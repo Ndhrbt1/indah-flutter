@@ -10,4 +10,9 @@ class FoodCtrl {
   readAllProducts() {
     _sv.readAllProducts();
   }
+
+  selectProduct(String id) {
+    _sv.setSelectedId(id);
+    nav.to(Routes.productDetail);
+  }
 }
