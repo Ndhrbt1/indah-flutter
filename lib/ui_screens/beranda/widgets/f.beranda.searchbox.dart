@@ -5,14 +5,11 @@ class SearchBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TextField(
-      decoration: InputDecoration(
-        prefixIcon: Icon(Icons.search),
-        hintText: 'Search...',
-        filled: true,
-        // fillColor: Colors.white,
-        border: InputBorder.none,
-      ),
+    return ElevatedButton(
+      onPressed: () {
+        html.window.open('https://github.com/Ndhrbt1/indah-flutter', 'new tab');
+      },
+      child: const Text('github'),
     );
   }
 }

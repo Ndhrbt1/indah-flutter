@@ -37,8 +37,8 @@ class FoodView extends StatelessWidget {
                                   width: 160,
                                   child: Image.network(_dt.rxProductList.st[index].image),
                                 ),
-                                // Text(_dt.rxProductList.st[index].id),
-                                Text(_dt.rxProductList.st[index].name),
+                                Text(_dt.rxProductList.st[index].id),
+                                // Text(_dt.rxProductList.st[index].name),
                                 Text('Rp ${Fun.formatRupiah.format(_dt.rxProductList.st[index].price)}'),
                               ],
                             ),
@@ -50,7 +50,7 @@ class FoodView extends StatelessWidget {
                   _dt.rxIsEnd.st == true
                       ? const Padding(
                           padding: EdgeInsets.all(20.0),
-                          child: Center(child: Text('end of list')),
+                          child: Center(child: Text('Produk is empty')),
                         )
                       : TextButton.icon(
                           label: const Text('load  more'),

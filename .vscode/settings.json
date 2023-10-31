@@ -31,8 +31,6 @@
     "*ios": true,
     "*ios.*": true,
     "*lib.*": true,
-    "*lib_old": true,
-    "*lib_old.*": true,
     "*linux": true,
     "*linux.*": true,
     "*macos": true,

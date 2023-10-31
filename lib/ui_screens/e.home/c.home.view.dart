@@ -10,7 +10,7 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   var listPage = <Widget>[
     const BerandaView(),
-    const BerandaView(),
+    const CartView(),
     const BerandaView(),
     const BerandaView(),
   ];

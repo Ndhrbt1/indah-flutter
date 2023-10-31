@@ -10,7 +10,7 @@ class ProductDetailView extends StatelessWidget {
         preferredSize: Size.fromHeight(56),
         child: ProductDetailAppbar(),
       ),
-      // floatingActionButton: const ProductDetailFab(),
+      floatingActionButton: const ProductDetailFab(),
       body: Center(
         child: OnBuilder<Product?>.all(
           listenTo: _dt.rxProductFuture,
@@ -26,12 +26,9 @@ class ProductDetailView extends StatelessWidget {
                 width: 250,
                 child: Image.network('${data?.image}'),
               ),
-              Text('${data?.id}'),
               Text('${data?.name}'),
               Text('${data?.price}'),
               Text('${data?.quantity}'),
-              Text('${data?.createdAt}'),
-              Text('${data?.updatedAt}'),
             ],
           ),
         ),

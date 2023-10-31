@@ -46,7 +46,7 @@ class ProductListView extends StatelessWidget {
                   _dt.rxIsEnd.st == true
                       ? const Padding(
                           padding: EdgeInsets.all(20.0),
-                          child: Center(child: Text('end of list')),
+                          child: Center(child: Text('produk is empty')),
                         )
                       : ElevatedButton(
                           onPressed: () {

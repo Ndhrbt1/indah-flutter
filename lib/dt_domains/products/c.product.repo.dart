@@ -70,4 +70,11 @@ class ProductRepo {
       data: product.toMap(),
     );
   }
+
+  Future<List<Product>> addToCart(Product product) async {
+    await Future.delayed(1.seconds);
+    List<Product> products = [];
+    _pv.rxCartList.st = [..._pv.rxCartList.st]..insert(0, product);
+    return products;
+  }
 }

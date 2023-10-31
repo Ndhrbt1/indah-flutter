@@ -1,4 +1,6 @@
 import 'dart:math';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
 import 'package:indah_flutter/ui_screens/beranda/a.food/_index.dart';

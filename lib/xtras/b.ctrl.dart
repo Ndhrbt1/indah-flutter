@@ -9,4 +9,5 @@ abstract class Ctrl {
   static LifeCtrl get life => LifeCtrl();
   static TechCtrl get tech => TechCtrl();
   static ProductDetailCtrl get productDetail => ProductDetailCtrl();
+  static CartCtrl get cart => CartCtrl();
 }

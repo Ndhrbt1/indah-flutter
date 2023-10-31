@@ -10,4 +10,5 @@ class Routes {
   static const beranda = '/beranda';
   static const home = '/home';
   static const productDetail = '/product_detail';
+  static const cart = '/cart';
 }

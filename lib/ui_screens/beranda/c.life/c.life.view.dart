@@ -9,18 +9,16 @@ class LifeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(56),
-        child: LifeAppbar(),
-      ),
-      floatingActionButton: LifeFab(),
+      // appBar: PreferredSize(
+      //   preferredSize: Size.fromHeight(56),
+      //   child: LifeAppbar(),
+      // ),
+      // floatingActionButton: LifeFab(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            LifeCharlie(),
-            LifeDelta(),
-            LifeEcho(),
+            Text('coming soon'),
           ],
         ),
       ),

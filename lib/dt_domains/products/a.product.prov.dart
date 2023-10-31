@@ -9,6 +9,11 @@ class ProductProv {
 
   final rxProductList = RM.inject<List<Product>>(() => []);
 
+  final rxCartList = RM.inject<List<Product>>(
+    () => [],
+    autoDisposeWhenNotUsed: false,
+  );
+
   final limit = 2;
 
   final rxIsEnd = false.inj();

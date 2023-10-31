@@ -12,6 +12,10 @@ class ProductServ {
     _pv.rxLoadMore.stateAsync = _rp.readAllProducts();
   }
 
+  addToCart(Product product) {
+    _rp.addToCart(product);
+  }
+
   addToList(List<Product> moreProduct) {
     _pv.rxProductList.st = [..._pv.rxProductList.st, ...moreProduct];
     if (moreProduct.length < _pv.limit) {

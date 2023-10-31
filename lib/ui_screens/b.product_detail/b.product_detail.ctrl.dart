@@ -13,4 +13,18 @@ class ProductDetailCtrl {
     RM.navigate.back();
     RM.navigate.back();
   }
+
+  addToCart() {
+    Product product = Product(
+      id: _dt.rxProductFuture.st!.id,
+      name: _dt.rxProductFuture.st!.name,
+      image: _dt.rxProductFuture.st!.image,
+      createdAt: _dt.rxProductFuture.st!.createdAt,
+      price: _dt.rxProductFuture.st!.price,
+      quantity: _dt.rxProductFuture.st!.quantity,
+    );
+    _sv.addToCart(product);
+    nav.back();
+    logx.i('addtocart');
+  }
 }

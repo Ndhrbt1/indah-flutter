@@ -18,8 +18,8 @@ class _BerandaViewState extends State<BerandaView> {
           slivers: [
             SliverAppBar(
               automaticallyImplyLeading: false,
-              centerTitle: true,
-              // title: const SearchBox(),
+              actions: const [SearchBox()],
+              title: const Text('Welcome to Inka Idn'),
               pinned: true,
               floating: true,
               bottom: PreferredSize(
